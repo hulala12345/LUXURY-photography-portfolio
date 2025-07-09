@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Photography Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Luxury Photography</h1>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="carousel">
+      <button class="carousel-control prev">&#10094;</button>
+      <div class="slides">
+        <img src="assets/photo1.svg" alt="Photo 1" class="slide active">
+        <img src="assets/photo2.svg" alt="Photo 2" class="slide">
+        <img src="assets/photo3.svg" alt="Photo 3" class="slide">
+      </div>
+      <button class="carousel-control next">&#10095;</button>
+    </div>
+
+    <div class="video-gallery">
+      <h3>Video Showcase</h3>
+      <div class="video-thumb" data-video="sample.mp4">
+        <img src="assets/thumb1.svg" alt="Video thumbnail">
+      </div>
+    </div>
+
+    <div class="gallery">
+      <h3>Gallery</h3>
+      <div class="gallery-grid">
+        <img src="assets/photo1.svg" alt="Gallery 1" class="gallery-item">
+        <img src="assets/photo2.svg" alt="Gallery 2" class="gallery-item">
+        <img src="assets/photo3.svg" alt="Gallery 3" class="gallery-item">
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Services</h2>
+    <ul class="service-list">
+      <li>
+        <div class="service-header">
+          <span class="service-name">Product Photography</span>
+          <button class="toggle">+</button>
+        </div>
+        <div class="service-detail">
+          High-quality product imagery for e-commerce and advertising.
+        </div>
+      </li>
+      <li>
+        <div class="service-header">
+          <span class="service-name">Styling & Art Direction</span>
+          <button class="toggle">+</button>
+        </div>
+        <div class="service-detail">
+          Creative concepts and styling to elevate your brand.
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Inquiry
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <div id="lightbox" class="lightbox hidden">
+    <button class="close">&times;</button>
+    <img src="" alt="lightbox image">
+    <button class="lightbox-prev">&#10094;</button>
+    <button class="lightbox-next">&#10095;</button>
+  </div>
+
+  <div id="videoModal" class="modal hidden">
+    <button class="close">&times;</button>
+    <video controls src="" id="modalVideo"></video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
